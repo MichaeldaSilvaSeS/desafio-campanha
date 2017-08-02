@@ -1,0 +1,2 @@
+INSERT INTO tbl_campanha (id_campanha,den_campanha,dt_inicio_vigencia,dt_fim_vigencia,id_time_do_coracao)
+	VALUES (1,'Campanha 1',TO_DATE('1990-10-20','YYYY-MM-DD'),TO_DATE('2010-10-20','YYYY-MM-DD'),1);
