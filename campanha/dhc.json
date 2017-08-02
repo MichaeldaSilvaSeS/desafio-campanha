@@ -1,0 +1,521 @@
+{
+  "front-version": "2.7.2",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "CA47446D-652D-4965-B4E6-14AA16851F4A",
+      "lastModified": "2017-08-02T02:20:35.670-03:00",
+      "name": "Prova"
+    },
+    {
+      "type": "Service",
+      "description": "",
+      "id": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639",
+      "lastModified": "2017-06-24T14:35:12.752-03:00",
+      "name": "Campanha",
+      "parentId": "CA47446D-652D-4965-B4E6-14AA16851F4A"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+        "name": "PUT"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"campanha\":{\n    \"nomeDaCampanha\": \"Time de Coracao\",\n    \"inicioVigencia\": \"2018-10-01T00:00:00-0300\",\n    \"fimVigencia\": \"2018-11-03T00:00:00-0300\",\n    \"idDoTimeDoCoracao\": 4\n  }\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8181",
+        "path": "/v1/campanha/4"
+      },
+      "id": "FCE7DF39-A90C-4978-869B-FC27F3AF8B87",
+      "lastModified": "2017-08-02T02:08:37.667-03:00",
+      "name": "Campanha - Altera",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8181",
+        "path": "/v1/campanha"
+      },
+      "id": "1B2BF0E0-7F0F-4B03-89C9-044FE222FDFE",
+      "lastModified": "2017-08-02T02:13:30.625-03:00",
+      "name": "Campanha - Lista",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8181",
+        "path": "/v1/campanha/1"
+      },
+      "id": "3DBA93C3-3FC7-4C6F-AC3D-47005117D243",
+      "lastModified": "2017-08-02T02:13:35.304-03:00",
+      "name": "Campanha - Remove",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"nome_da_campanha\": \"Time de Coracao\",\n  \"inicio_vigencia\": \"2018-01-01\",\n  \"fim_vigencia\": \"2018-01-03\",\n  \"id_time_do_Coracao\": \"1\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8181",
+        "path": "/v1/campanha/"
+      },
+      "id": "AE02A4F0-7B0F-4710-8D6B-8E9997E3BB11",
+      "lastModified": "2017-08-02T02:20:35.671-03:00",
+      "name": "Campanha - Salva",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8181",
+        "path": "/v1/campanha/1"
+      },
+      "id": "F37A94BF-B122-45CB-A85A-AA3CDEE543CB",
+      "lastModified": "2017-08-02T02:13:47.203-03:00",
+      "name": "Campanha - Seleciona",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"idSocio\": 1,\n  \"campanha\": {\n    \"idCampanha\": 2\n  }\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8181",
+        "path": "/v1/associado/"
+      },
+      "id": "098701CC-D982-4972-BA96-D9BBE749515A",
+      "lastModified": "2017-08-02T02:13:54.664-03:00",
+      "name": "CampanhaAssociado - Salva",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8181",
+        "path": "/v1/associado/1"
+      },
+      "id": "5A0E7EC8-3A63-47B9-8BB1-7C101AECF203",
+      "lastModified": "2017-08-02T02:13:58.464-03:00",
+      "name": "CampanhaAssociado - Seleciona Por Socio",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "0A0B35D0-52A3-44C0-ADF5-BDFB5EFB6639"
+    },
+    {
+      "type": "Service",
+      "description": "",
+      "id": "9E3C3F66-4D9D-4F37-A41A-3813D1192C47",
+      "lastModified": "2017-06-24T20:04:31.543-03:00",
+      "name": "Socio",
+      "parentId": "CA47446D-652D-4965-B4E6-14AA16851F4A"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+        "name": "PUT"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"socio\":{\n    \"nomeCompleto\": \"Time de Coracao\",\n    \"email\": \"email@email.com\",\n    \"dataDeNascimento\": \"2010-11-10T00:00:00-0300\",\n    \"idMeuTimeDoCoracao\": 4\n  }\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/v1/socio/1"
+      },
+      "id": "B6C72051-5221-40D7-80E0-4B3EE052D615",
+      "lastModified": "2017-08-02T02:12:30.905-03:00",
+      "name": "Socio - Altera",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "9E3C3F66-4D9D-4F37-A41A-3813D1192C47"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/v1/socio/"
+      },
+      "id": "269F41DE-F9DB-4D8B-BD21-E804B491D537",
+      "lastModified": "2017-08-02T02:12:37.912-03:00",
+      "name": "Socio - Lista",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "9E3C3F66-4D9D-4F37-A41A-3813D1192C47"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/v1/socio/1"
+      },
+      "id": "65F49F63-BF30-419E-B14E-3D9BECD35B6C",
+      "lastModified": "2017-08-02T02:14:08.954-03:00",
+      "name": "Socio - Remove",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "9E3C3F66-4D9D-4F37-A41A-3813D1192C47"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"socio\":{\n    \"nomeCompleto\": \"Time de Coracao\",\n    \"email\": \"email@email.com\",\n    \"dataDeNascimento\": \"2010-11-10T00:00:00-0300\",\n    \"idMeuTimeDoCoracao\": 4\n  }\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/v1/socio/"
+      },
+      "id": "C2C10A38-32E4-4BCB-8BBE-7A51BC1B69D7",
+      "lastModified": "2017-08-02T02:12:12.625-03:00",
+      "name": "Socio - Salva",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "9E3C3F66-4D9D-4F37-A41A-3813D1192C47"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/v1/socio/2"
+      },
+      "id": "D90FED30-A136-4D15-A24F-3AECD10B51FF",
+      "lastModified": "2017-08-02T02:14:15.041-03:00",
+      "name": "Socio - Seleciona",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "9E3C3F66-4D9D-4F37-A41A-3813D1192C47"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "email",
+              "value": "joaosilva@gmail.com"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/v1/socio/email"
+      },
+      "id": "76496490-C7AF-48C4-B47E-A830898C1813",
+      "lastModified": "2017-08-02T02:14:21.703-03:00",
+      "name": "Socio - Seleciona por Email",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "9E3C3F66-4D9D-4F37-A41A-3813D1192C47"
+    }
+  ]
+}
