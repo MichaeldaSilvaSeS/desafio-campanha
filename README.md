@@ -23,7 +23,7 @@ Tecnologias utilizadas
 
 Execucao
 ------------------------
-- Tomcat	: portas (8080 ou 8181), verificar application.properties do projeto
+- Tomcat	: portas 8181, verificar application.properties do projeto
 - Maven		: $ mvn clean package spring-boot:run
-- Swagger	: http://localhost:8082/swagger-ui.html
+- Swagger	: http://localhost:8181/swagger-ui.html
 - Restlet (opcional): instale o pluggin https://chrome.google.com/webstore/detail/restlet-client-rest-api-t/aejoelaoggembcahagimdiliamlcdmfm e importe o arquivo dhc.json 
